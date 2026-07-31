@@ -1,5 +1,7 @@
 import asyncio
+
 import pytest
+
 from device_bridge.core.bridge import AsyncDeviceBridge
 from device_bridge.drivers.mock_serial import SerialHardwareDriver
 from device_bridge.models.telemetry import SensorPayload
