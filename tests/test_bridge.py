@@ -16,7 +16,7 @@ async def test_home_assistant_entity_mapping() -> None:
 
     def handle_entity_update(entities: dict[str, Entity]) -> None:
         nonlocal latest_entities
-        latest_entities = entities.copy()
+        latest_entities = dict(entities)
 
     bridge.register_callback(handle_entity_update)
 
