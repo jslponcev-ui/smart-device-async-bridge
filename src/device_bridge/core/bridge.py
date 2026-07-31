@@ -23,7 +23,7 @@ class AsyncDeviceBridge:
                 for cb in self._callbacks:
                     try:
                         cb(payload)
-                    except Exception as err:
+                    except Exception as err:  # noqa: BLE001
                         logger.error(f"Error in telemetry callback: {err}")
         except asyncio.CancelledError:
             logger.info("Telemetry stream processing cancelled cleanly.")
