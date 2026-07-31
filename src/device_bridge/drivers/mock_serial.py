@@ -1,6 +1,6 @@
 import asyncio
-from collections.abc import AsyncGenerator
 import random
+from collections.abc import AsyncGenerator
 
 from device_bridge.models.telemetry import DeviceStatus, SensorPayload
 

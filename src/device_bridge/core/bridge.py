@@ -1,6 +1,6 @@
 import asyncio
-from collections.abc import Callable
 import logging
+from collections.abc import Callable
 
 from device_bridge.drivers.mock_serial import SerialHardwareDriver
 from device_bridge.models.telemetry import SensorPayload
